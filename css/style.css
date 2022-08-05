@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.body {
+  min-height: 100vh;
+  background-color: #F5ECEC;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1417px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 13px;
+}
+
+.aside, .navigation, .header__cash, .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside {
+  background-color: rgb(174, 52, 205);
+  max-width: 356px;
+  border-radius: 39px;
+  padding: 40px;
+}
+.aside__check-box {
+  position: relative;
+  padding-bottom: 80px;
+}
+.aside__img_sun {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+}
+
+.navigation {
+  gap: 84px;
+}
+.navigation__link {
+  display: flex;
+  align-items: center;
+}
+.navigation__link_active {
+  background-color: rgb(212, 173, 217);
+  border-top-right-radius: 39px;
+  border-bottom-right-radius: 39px;
+}
+.navigation__name {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.section-wrap {
+  background-color: #D4ADD9;
+  color: rgb(57, 6, 70);
+  border-radius: 39px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 1048px;
+}
+
+.cash {
+  align-items: center;
+}
+.cash__number {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 72px;
+}
+.cash__text {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.header__wallet {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+
+.wallet__text {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.content {
+  gap: 30px;
+}
+
+.main {
+  padding: 37px 55px 67px 64px;
+  flex-grow: 1;
+  max-width: 1048px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__diagram {
+  min-width: 370px;
+  padding: 15px;
+}
+.footer__graphic {
+  min-width: 630px;
+  padding: 15px;
+}
+.footer__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 494px;
+}
+.footer__img_circle {
+  border: 20px solid rgb(174, 52, 205);
+  padding: 7px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

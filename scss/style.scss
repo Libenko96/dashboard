@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+@import "./reset";
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.body {
+  min-height: 100vh;
+  background-color: #F5ECEC;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1417px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 13px;
+}
+
+$purple: rgba(174, 52, 205, 1);
+$purple-light: #D4ADD9;
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin font-set ($weight, $size, $height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+.aside, .navigation, .header__cash, .content {
+  @extend %flex-column;
+}
+
+.aside {
+  background-color: $purple;
+  max-width: 356px;
+  border-radius: 39px;
+  padding: 40px;
+  &__check-box {
+    position: relative;
+    padding-bottom: 80px;
+  }
+  &__img_sun {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+  }
+}
+.navigation {
+  gap: 84px;
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+  &__link_active {
+    background-color: rgba(212, 173, 217, 1);
+    border-top-right-radius: 39px;
+    border-bottom-right-radius: 39px;
+  }
+  &__name{
+    @include font-set (400, 30px, 36px)
+  }
+}
+
+
+.section-wrap {
+  background-color: $purple-light;
+  color: rgba(57, 6, 70, 1);
+  border-radius: 39px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 1048px;
+}
+.cash {
+  align-items: center;
+  &__number {
+    @include font-set (800, 60px, 72px);
+  }
+  &__text {
+    @include font-set (800, 20px, 24px);
+    color: #FFFFFF;
+  }
+}
+.header__wallet {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+.wallet {
+  &__text {
+    @include font-set (800, 50px, 60px);
+  }
+}
+
+.content {
+  gap: 30px;
+}
+
+.main {
+  padding: 37px 55px 67px 64px;
+  flex-grow: 1;
+  max-width: 1048px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  &__diagram{
+    min-width: 370px;
+    padding: 15px;
+  }
+  &__graphic {
+    min-width: 630px;
+    padding: 15px;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+    max-width: 494px;
+  }
+  &__img_circle {
+    border: 20px solid $purple;
+    padding: 7px;
+    border-radius: 50%;
+  }
+}
